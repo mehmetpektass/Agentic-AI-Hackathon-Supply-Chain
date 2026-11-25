@@ -1,0 +1,11 @@
+dealer_id,dealer_name,region,dealer_type
+BAYI-01,Bayi-01 Kadıköy,Marmara,CHAIN
+BAYI-02,Bayi-02 Çarşı,Ege,CHAIN
+BAYI-03,Bayi-03 Merkez,İç Anadolu,CHAIN
+BAYI-04,Bayi-04 Sahil,Akdeniz,CHAIN
+BAYI-05,Bayi-05 Pazar,Marmara,TRADITIONAL
+BAYI-06,Bayi-06 Sanayi,Ege,TRADITIONAL
+BAYI-07,Bayi-07 Terminal,İç Anadolu,TRADITIONAL
+BAYI-08,Bayi-08 Liman,Karadeniz,TRADITIONAL
+BAYI-09,Bayi-09 Kampüs,Güneydoğu,TRADITIONAL
+BAYI-10,Bayi-10 Köy Yolu,Akdeniz,TRADITIONAL

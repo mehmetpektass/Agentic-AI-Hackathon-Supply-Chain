@@ -1,0 +1,26 @@
+{
+  "elasticity": {
+    "COLD": 1.5,
+    "DRY": 1.2
+  },
+  "max_discount_pct_by_role": {
+    "ticari": {
+      "DEALER_OFFER": 20,
+      "CAMPAIGN": 25
+    }
+  },
+  "donation_min_days_to_expiry": 1,
+  "supplier_return_min_days_to_expiry": 4,
+  "supplier_return_credit_pct": 0.6,
+  "forecast_low_confidence_wape": 0.4,
+  "risk_level_thresholds_try": {
+    "medium_min": 2000,
+    "high_min": 10000
+  },
+  "slow_mover_daily_units": 8,
+  "large_lot_days_of_cover": 20,
+  "weekend_drop_factor": 0.85,
+  "stopped_ordering_days": 7,
+  "strict_dealer_share_pct": 70,
+  "demand_drop_trend_pct": 20
+}

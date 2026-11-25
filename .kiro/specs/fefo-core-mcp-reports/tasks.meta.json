@@ -1,0 +1,298 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Write `data-gen/generate.py` with a fixed seed, output only to `data-gen/out/{raw,config,policy}`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607063600
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607162105
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607983093
+      }
+    ],
+    "2.1 Write `scripts/sync_data.sh` with `--from <dir>` (default `data/`)": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607067717
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608003393
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608169936
+      }
+    ],
+    "2.2 Write the sync smoke test (`FefoAgent/app/agent/tests/test_sync_data.py`)": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607071121
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608327722
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608406764
+      }
+    ],
+    "3.1 Implement `fefo_core/validate.py` and `tests/test_validate.py`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607076442
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608006760
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608174728
+      }
+    ],
+    "3.2 Implement `fefo_core/features.py` and `tests/test_features.py`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607081319
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608186151
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608321582
+      }
+    ],
+    "3.3 Implement `fefo_core/forecast.py` and `tests/test_forecast.py`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607086467
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608331591
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608415047
+      }
+    ],
+    "3.4 Implement `fefo_core/risk.py` and `tests/test_risk.py`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607091363
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608420823
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608537946
+      }
+    ],
+    "3.5 Implement `fefo_core/pipeline.py` (`Snapshot`, `load_snapshot`) and a minimal stub-shape `fefo_core/simulate.py`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607096336
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608541835
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608687735
+      }
+    ],
+    "4.1 Copy `fefo_mcp_stub/` to `fefo_mcp/` and replace fixture reads with `fefo_core` calls": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607101782
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608698942
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608811022
+      }
+    ],
+    "4.2 Fix `config.PARAMS_PATH` to `data/config/params.json`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607106498
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608702369
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608815318
+      }
+    ],
+    "4.3 Run the Contract_Tests with `MCP_BACKEND=fefo_mcp`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607112331
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608824084
+      }
+    ],
+    "4.4 Write the scenario test (`tests/test_scenarios.py`)": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607117156
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608828488
+      }
+    ],
+    "5.1 Add `fpdf2` and `openpyxl` to `[project].dependencies` in `FefoAgent/app/agent/pyproject.toml`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607121961
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607165544
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607990855
+      }
+    ],
+    "5.2 Implement `fefo_mcp/report.py` `DAILY_RISK` PDF and wire it into `generate_report_file`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607125813
+      },
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608833072
+      }
+    ],
+    "5.3 Generate a PDF locally, open it and verify Turkish characters (required)": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607129716
+      }
+    ],
+    "6. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607133828
+      }
+    ],
+    "7.1 Set `MCP_BACKEND` to `fefo_mcp` in `FefoAgent/agentcore/agentcore.json`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607137427
+      }
+    ],
+    "7.2 Ask the user before deleting `fefo_mcp_stub/`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607141422
+      }
+    ],
+    "7.3 Run `agentcore deploy` from `FefoAgent/`": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607144830
+      }
+    ],
+    "7.4 Verify TEAM_PLAN section 9 (five Lab 7 checks)": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607148186
+      }
+    ],
+    "7.5 Invoke \"Gunluk riskli urun raporunu PDF yap\" on the deployed runtime": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607151528
+      }
+    ],
+    "1. Synthetic data generator": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795607986853
+      }
+    ],
+    "2. Sync script": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608410783
+      }
+    ],
+    "3. fefo_core pipeline": [
+      {
+        "executionId": "96d44ff3-de64-441a-9be7-f369a72ee3d2",
+        "chatSessionId": "sess_d0a3da5c-a1a6-4940-94b0-b8239b20598c",
+        "timestamp": 1795608691452
+      }
+    ]
+  }
+}

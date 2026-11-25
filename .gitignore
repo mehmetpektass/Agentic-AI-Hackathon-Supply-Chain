@@ -10,3 +10,4 @@ cdk.out/
 traces/
 *.pdf
 *.xlsx
+FefoAgent/app/agent/tests/.scenario_results.json

@@ -31,12 +31,12 @@ def get_knowledge_base_id() -> str | None:
 
 
 # --- Max_Discount_Pct_By_Role: tek varsayılan noktası -------------------------------------
-# Kaynak: app/agent/data/params.json -> "max_discount_pct_by_role". Dosya veya alan yoksa
+# Kaynak: app/agent/data/config/params.json (sync_data.sh yazar) -> "max_discount_pct_by_role". Dosya veya alan yoksa
 # aşağıdaki varsayılan kullanılır. depo rolü için indirimli aksiyon tanımlı değildir.
 DEFAULT_MAX_DISCOUNT_PCT_BY_ROLE: dict[str, dict[str, float]] = {
     "ticari": {"DEALER_OFFER": 20, "CAMPAIGN": 25},
 }
-PARAMS_PATH = Path(__file__).resolve().parent / "data" / "params.json"
+PARAMS_PATH = Path(__file__).resolve().parent / "data" / "config" / "params.json"
 
 
 def load_max_discount_pct_by_role(path: Path | None = None) -> dict[str, dict[str, float]]:

@@ -1,0 +1,41 @@
+sku_id,sku_name,category,shelf_life_days,unit_cost_try,unit_price_try,unit_weight_kg,supplier_id,supplier_return_allowed
+SKU-001,Süzme Yoğurt 1 kg,COLD,21,33.00,47.85,1.000,SUP-01,false
+SKU-002,Tam Yağlı Süt 1 L,COLD,16,22.00,30.80,1.030,SUP-01,false
+SKU-003,Probiyotik Ayran 6'lı Paket,COLD,18,52.00,73.84,1.500,SUP-02,false
+SKU-004,Beyaz Peynir 500 g,COLD,21,88.00,121.44,0.500,SUP-02,true
+SKU-005,Kaşar Peyniri 400 g,COLD,21,96.00,134.40,0.400,SUP-02,true
+SKU-006,Tereyağı 250 g,COLD,21,78.00,107.64,0.250,SUP-03,true
+SKU-007,Kefir 500 ml,COLD,17,18.00,27.00,0.520,SUP-01,false
+SKU-008,Dilimli Hindi Füme 150 g,COLD,20,40.00,58.00,0.150,SUP-04,true
+SKU-009,Hazır Humus 200 g,COLD,16,24.00,34.80,0.200,SUP-04,true
+SKU-010,Taze Krema 200 ml,COLD,18,30.00,42.00,0.200,SUP-01,false
+SKU-011,Sade Tavuk Sosis 350 g,COLD,21,46.00,64.40,0.350,SUP-05,true
+SKU-012,Taze Meyve Suyu 1 L,COLD,15,28.00,40.60,1.050,SUP-05,false
+SKU-013,Çikolatalı Bisküvi 300 g,DRY,180,17.00,23.80,0.300,SUP-06,true
+SKU-014,Üzüm Pekmezi 700 g,DRY,95,44.00,61.60,0.950,SUP-06,true
+SKU-015,"Pilavlık Pirinç 2,5 kg",DRY,365,118.00,147.50,2.500,SUP-07,true
+SKU-016,İnce Bulgur 1 kg,DRY,300,24.00,31.20,1.000,SUP-07,true
+SKU-017,Spagetti Makarna 500 g,DRY,365,14.00,18.90,0.500,SUP-08,true
+SKU-018,Kırmızı Mercimek 1 kg,DRY,365,52.00,67.60,1.000,SUP-07,true
+SKU-019,Kuru Nohut 1 kg,DRY,365,58.00,75.40,1.000,SUP-07,true
+SKU-020,Kuru Fasulye 1 kg,DRY,365,62.00,80.60,1.000,SUP-07,true
+SKU-021,Buğday Unu 2 kg,DRY,240,46.00,58.88,2.000,SUP-08,true
+SKU-022,Toz Şeker 1 kg,DRY,365,36.00,43.20,1.000,SUP-08,true
+SKU-023,Sofra Tuzu 750 g,DRY,365,9.00,13.50,0.750,SUP-08,true
+SKU-024,Siyah Çay 500 g,DRY,365,105.00,136.50,0.500,SUP-09,true
+SKU-025,Türk Kahvesi 100 g,DRY,300,64.00,86.40,0.100,SUP-09,true
+SKU-026,Naturel Zeytinyağı 1 L,DRY,365,235.00,286.70,0.920,SUP-10,true
+SKU-027,Ayçiçek Yağı 2 L,DRY,330,118.00,141.60,1.850,SUP-10,true
+SKU-028,Domates Salçası 700 g,DRY,365,48.00,63.36,0.700,SUP-11,true
+SKU-029,Konserve Domates 400 g,DRY,365,19.00,25.65,0.400,SUP-11,true
+SKU-030,Konserve Ton Balığı 160 g,DRY,365,58.00,75.40,0.160,SUP-11,true
+SKU-031,Tuzlu Kraker 200 g,DRY,240,14.00,19.60,0.200,SUP-06,true
+SKU-032,Sütlü Çikolata 80 g,DRY,270,21.00,30.45,0.080,SUP-06,true
+SKU-033,Çiğ Fındık 250 g,DRY,300,96.00,124.80,0.250,SUP-09,true
+SKU-034,Çekirdeksiz Kuru Üzüm 250 g,DRY,330,48.00,63.36,0.250,SUP-09,true
+SKU-035,Çilek Reçeli 380 g,DRY,365,38.00,51.30,0.550,SUP-11,true
+SKU-036,Çiçek Balı 460 g,DRY,365,125.00,162.50,0.620,SUP-10,true
+SKU-037,Tahin 600 g,DRY,280,92.00,119.60,0.800,SUP-10,true
+SKU-038,Siyah Zeytin 500 g,DRY,365,72.00,95.04,0.700,SUP-11,true
+SKU-039,Karışık Turşu 720 g,DRY,365,34.00,46.92,0.950,SUP-11,true
+SKU-040,Kuru Kayısı 500 g,DRY,330,88.00,114.40,0.500,SUP-09,true

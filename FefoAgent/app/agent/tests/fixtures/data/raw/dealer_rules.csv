@@ -1,0 +1,5 @@
+dealer_id,category,shelf_pull_days,min_days_on_receipt
+BAYI-01,COLD,4,6
+BAYI-01,DRY,30,45
+BAYI-02,COLD,3,5
+BAYI-02,DRY,20,22

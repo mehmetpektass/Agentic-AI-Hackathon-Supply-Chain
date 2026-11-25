@@ -1,0 +1,5 @@
+sku_id,sku_name,category,shelf_life_days,unit_cost_try,unit_price_try,unit_weight_kg,supplier_id,supplier_return_allowed
+SKU-001,Süzme Yoğurt 1 kg,COLD,14,30.00,45.00,1.000,SUP-01,false
+SKU-002,Tam Yağlı Süt 1 L,COLD,21,20.00,28.00,1.030,SUP-01,true
+SKU-003,Makarna 500 g,DRY,120,10.00,15.00,0.500,SUP-02,true
+SKU-004,Bisküvi 200 g,DRY,90,8.00,12.00,0.200,SUP-02,false

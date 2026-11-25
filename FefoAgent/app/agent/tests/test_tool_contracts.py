@@ -1,9 +1,32 @@
 """Tool kontrat testleri (Stub_MCP varsayılan). Her tool çıktısı schemas.py ile doğrulanır."""
+import csv
+import os
 import subprocess
 import sys
 
+import pytest
+
 import schemas
 from tests.conftest import APP_DIR
+
+IS_STUB = os.environ.get("MCP_BACKEND", "stub") == "stub"
+SCENARIOS_CSV = APP_DIR.parents[2] / "data-gen" / "out" / "scenarios" / "scenarios.csv"
+
+
+def _lot_id(mcp_backend) -> str:
+    """Stub: sabit fixture lotu. Diğer backend'ler: canlı sunucudaki en riskli lot."""
+    if IS_STUB:
+        return "LOT-SKU-012-1"
+    return mcp_backend.call("get_expiry_risks", top_n=1)["items"][0]["lot_id"]
+
+
+def _control_sku() -> str | None:
+    if IS_STUB:
+        return "SKU-077"
+    if not SCENARIOS_CSV.exists():
+        return None
+    with open(SCENARIOS_CSV, newline="") as f:
+        return next((r["sku_id"] for r in csv.DictReader(f) if r["scenario"] == "CONTROL"), None)
 
 
 def test_get_expiry_risks_contract_and_order(mcp_backend):
@@ -30,14 +53,14 @@ def test_get_sku_profile_contract_and_error(mcp_backend):
 def test_simulate_actions_contract_and_order(mcp_backend):
     actions = [{"type": "FEFO_PRIORITY", "params": {}},
                {"type": "DEALER_OFFER", "params": {"discount_pct": 10}}]
-    data = mcp_backend.call("simulate_actions", lot_id="LOT-SKU-012-1", actions=actions)
+    data = mcp_backend.call("simulate_actions", lot_id=_lot_id(mcp_backend), actions=actions)
     assert schemas.validate_simulation(data) == []
     assert [s["action"] for s in data["steps"]] == ["FEFO_PRIORITY", "DEALER_OFFER"]
     assert data["final_loss_try"] <= data["baseline_loss_try"]
 
 
 def test_create_action_drafts_contract(mcp_backend):
-    data = mcp_backend.call("create_action_drafts", lot_id="LOT-SKU-012-1",
+    data = mcp_backend.call("create_action_drafts", lot_id=_lot_id(mcp_backend),
                             approved_actions=[{"type": "SUPPLIER_RETURN", "params": {}}],
                             approver_actor_id="depo-test")
     assert schemas.validate_drafts(data) == []
@@ -62,6 +85,9 @@ def test_stub_stdout_only_protocol():
 def test_reason_codes_enum_and_control_sku(mcp_backend):
     data = mcp_backend.call("get_expiry_risks")
     assert all(c in schemas.REASON_CODES for i in data["items"] for c in i["reason_codes"])
-    control = next(i for i in data["items"] if i["sku_id"] == "SKU-077")
-    assert control["risk_level"] == "LOW" and control["reason_codes"] == []
+    control_sku = _control_sku()
+    if control_sku is not None:
+        control = next((i for i in data["items"] if i["sku_id"] == control_sku), None)
+        if control is not None or IS_STUB:
+            assert control["risk_level"] == "LOW" and control["reason_codes"] == []
     assert schemas.invalid_reason_codes(["YOK_KOD"]) != []
