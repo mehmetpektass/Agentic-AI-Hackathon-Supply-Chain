@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "default": {
+      "stackArn": "arn:aws:cloudformation:us-east-1:862714237836:stack/AgentCore-FefoAgent-default/116910f0-e8bc-11f1-b6bd-0eb99b0e6cff",
+      "resources": {
+        "credentials": {}
+      }
+    }
+  }
+}

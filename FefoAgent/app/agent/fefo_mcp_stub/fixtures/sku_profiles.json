@@ -1,0 +1,199 @@
+{
+  "SKU-012": {
+    "sku": {
+      "sku_id": "SKU-012",
+      "sku_name": "Süzme Yoğurt 1 kg",
+      "category": "COLD"
+    },
+    "daily_velocity": {
+      "avg_7d": 42.0,
+      "avg_30d": 55.0,
+      "trend_pct": -23.6
+    },
+    "weekday_factors": {
+      "Mon": 1.0,
+      "Tue": 0.9,
+      "Wed": 0.9,
+      "Thu": 1.0,
+      "Fri": 1.2,
+      "Sat": 1.3,
+      "Sun": 0.7
+    },
+    "forecast_method": "STUB",
+    "wape": 0.18,
+    "lots": [
+      {
+        "lot_id": "LOT-SKU-012-1",
+        "qty_units": 480,
+        "expiry_date": "2026-12-02",
+        "location_bin": "A-03-2",
+        "last_shipped_date": "2026-11-24"
+      }
+    ],
+    "dealers": [
+      {
+        "dealer_id": "BAYI-03",
+        "dealer_type": "TRADITIONAL",
+        "share_pct": 35.0,
+        "avg_daily_units": 14.0,
+        "last_order_date": "2026-11-22",
+        "days_since_last_order": 3,
+        "min_days_on_receipt": 2,
+        "eligible_for_lot_ids": [
+          "LOT-SKU-012-1"
+        ]
+      }
+    ],
+    "signals": [
+      "FIFO_BROKEN",
+      "DEMAND_DROP"
+    ]
+  },
+  "SKU-031": {
+    "sku": {
+      "sku_id": "SKU-031",
+      "sku_name": "Tam Yağlı Süt 1 L",
+      "category": "COLD"
+    },
+    "daily_velocity": {
+      "avg_7d": 42.0,
+      "avg_30d": 55.0,
+      "trend_pct": -23.6
+    },
+    "weekday_factors": {
+      "Mon": 1.0,
+      "Tue": 0.9,
+      "Wed": 0.9,
+      "Thu": 1.0,
+      "Fri": 1.2,
+      "Sat": 1.3,
+      "Sun": 0.7
+    },
+    "forecast_method": "STUB",
+    "wape": 0.22,
+    "lots": [
+      {
+        "lot_id": "LOT-SKU-031-2",
+        "qty_units": 900,
+        "expiry_date": "2026-12-05",
+        "location_bin": "B-01-1",
+        "last_shipped_date": "2026-11-24"
+      }
+    ],
+    "dealers": [
+      {
+        "dealer_id": "BAYI-03",
+        "dealer_type": "TRADITIONAL",
+        "share_pct": 35.0,
+        "avg_daily_units": 14.0,
+        "last_order_date": "2026-11-22",
+        "days_since_last_order": 3,
+        "min_days_on_receipt": 2,
+        "eligible_for_lot_ids": [
+          "LOT-SKU-031-2"
+        ]
+      }
+    ],
+    "signals": [
+      "SLOW_MOVER"
+    ]
+  },
+  "SKU-058": {
+    "sku": {
+      "sku_id": "SKU-058",
+      "sku_name": "Kaşar Peyniri 400 g",
+      "category": "COLD"
+    },
+    "daily_velocity": {
+      "avg_7d": 42.0,
+      "avg_30d": 55.0,
+      "trend_pct": -23.6
+    },
+    "weekday_factors": {
+      "Mon": 1.0,
+      "Tue": 0.9,
+      "Wed": 0.9,
+      "Thu": 1.0,
+      "Fri": 1.2,
+      "Sat": 1.3,
+      "Sun": 0.7
+    },
+    "forecast_method": "STUB",
+    "wape": 0.41,
+    "lots": [
+      {
+        "lot_id": "LOT-SKU-058-1",
+        "qty_units": 250,
+        "expiry_date": "2026-12-01",
+        "location_bin": "A-07-3",
+        "last_shipped_date": "2026-11-24"
+      }
+    ],
+    "dealers": [
+      {
+        "dealer_id": "BAYI-03",
+        "dealer_type": "TRADITIONAL",
+        "share_pct": 35.0,
+        "avg_daily_units": 14.0,
+        "last_order_date": "2026-11-22",
+        "days_since_last_order": 3,
+        "min_days_on_receipt": 2,
+        "eligible_for_lot_ids": [
+          "LOT-SKU-058-1"
+        ]
+      }
+    ],
+    "signals": [
+      "DEALER_INACTIVE"
+    ]
+  },
+  "SKU-077": {
+    "sku": {
+      "sku_id": "SKU-077",
+      "sku_name": "Makarna 500 g",
+      "category": "DRY"
+    },
+    "daily_velocity": {
+      "avg_7d": 42.0,
+      "avg_30d": 55.0,
+      "trend_pct": -23.6
+    },
+    "weekday_factors": {
+      "Mon": 1.0,
+      "Tue": 0.9,
+      "Wed": 0.9,
+      "Thu": 1.0,
+      "Fri": 1.2,
+      "Sat": 1.3,
+      "Sun": 0.7
+    },
+    "forecast_method": "STUB",
+    "wape": 0.12,
+    "lots": [
+      {
+        "lot_id": "LOT-SKU-077-1",
+        "qty_units": 1200,
+        "expiry_date": "2026-12-20",
+        "location_bin": "D-02-1",
+        "last_shipped_date": "2026-11-24"
+      }
+    ],
+    "dealers": [
+      {
+        "dealer_id": "BAYI-03",
+        "dealer_type": "TRADITIONAL",
+        "share_pct": 35.0,
+        "avg_daily_units": 14.0,
+        "last_order_date": "2026-11-22",
+        "days_since_last_order": 3,
+        "min_days_on_receipt": 2,
+        "eligible_for_lot_ids": [
+          "LOT-SKU-077-1"
+        ]
+      }
+    ],
+    "signals": [
+      "NEAR_THRESHOLD"
+    ]
+  }
+}

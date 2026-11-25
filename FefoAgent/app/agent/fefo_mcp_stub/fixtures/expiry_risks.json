@@ -1,0 +1,131 @@
+[
+  {
+    "sku_id": "SKU-012",
+    "sku_name": "Süzme Yoğurt 1 kg",
+    "category": "COLD",
+    "lot_id": "LOT-SKU-012-1",
+    "qty_units": 480,
+    "expiry_date": "2026-12-02",
+    "days_to_expiry": 7,
+    "location_bin": "A-03-2",
+    "sellable_window_days": 6,
+    "forecast_units_in_window": {
+      "low": 300,
+      "expected": 360,
+      "high": 420
+    },
+    "at_risk_units": {
+      "low": 60,
+      "expected": 120,
+      "high": 180
+    },
+    "loss_try": {
+      "low": 1800,
+      "expected": 3600,
+      "high": 5400
+    },
+    "risk_level": "HIGH",
+    "reason_codes": [
+      "FIFO_BROKEN",
+      "DEMAND_DROP"
+    ],
+    "forecast_confidence": "HIGH",
+    "wape": 0.18
+  },
+  {
+    "sku_id": "SKU-031",
+    "sku_name": "Tam Yağlı Süt 1 L",
+    "category": "COLD",
+    "lot_id": "LOT-SKU-031-2",
+    "qty_units": 900,
+    "expiry_date": "2026-12-05",
+    "days_to_expiry": 10,
+    "location_bin": "B-01-1",
+    "sellable_window_days": 9,
+    "forecast_units_in_window": {
+      "low": 700,
+      "expected": 760,
+      "high": 820
+    },
+    "at_risk_units": {
+      "low": 80,
+      "expected": 140,
+      "high": 200
+    },
+    "loss_try": {
+      "low": 640,
+      "expected": 1120,
+      "high": 1600
+    },
+    "risk_level": "MEDIUM",
+    "reason_codes": [
+      "SLOW_MOVER"
+    ],
+    "forecast_confidence": "MEDIUM",
+    "wape": 0.22
+  },
+  {
+    "sku_id": "SKU-058",
+    "sku_name": "Kaşar Peyniri 400 g",
+    "category": "COLD",
+    "lot_id": "LOT-SKU-058-1",
+    "qty_units": 250,
+    "expiry_date": "2026-12-01",
+    "days_to_expiry": 6,
+    "location_bin": "A-07-3",
+    "sellable_window_days": 5,
+    "forecast_units_in_window": {
+      "low": 120,
+      "expected": 150,
+      "high": 190
+    },
+    "at_risk_units": {
+      "low": 60,
+      "expected": 100,
+      "high": 130
+    },
+    "loss_try": {
+      "low": 1500,
+      "expected": 2500,
+      "high": 3250
+    },
+    "risk_level": "MEDIUM",
+    "reason_codes": [
+      "DEALER_INACTIVE"
+    ],
+    "forecast_confidence": "LOW",
+    "wape": 0.41
+  },
+  {
+    "sku_id": "SKU-077",
+    "sku_name": "Makarna 500 g",
+    "category": "DRY",
+    "lot_id": "LOT-SKU-077-1",
+    "qty_units": 1200,
+    "expiry_date": "2026-12-20",
+    "days_to_expiry": 25,
+    "location_bin": "D-02-1",
+    "sellable_window_days": 20,
+    "forecast_units_in_window": {
+      "low": 1000,
+      "expected": 1100,
+      "high": 1200
+    },
+    "at_risk_units": {
+      "low": 0,
+      "expected": 100,
+      "high": 200
+    },
+    "loss_try": {
+      "low": 0,
+      "expected": 300,
+      "high": 600
+    },
+    "risk_level": "LOW",
+    "reason_codes": [
+      "NEAR_THRESHOLD"
+    ],
+    "forecast_confidence": "HIGH",
+    "wape": 0.12
+  }
+]
