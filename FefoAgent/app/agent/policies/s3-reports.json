@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FefoReportsAndDecisionsObjects",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject", "s3:GetObject"],
+      "Resource": [
+        "arn:aws:s3:::fefo-862714237836-us-east-1/reports/*",
+        "arn:aws:s3:::fefo-862714237836-us-east-1/decisions/*"
+      ]
+    }
+  ]
+}

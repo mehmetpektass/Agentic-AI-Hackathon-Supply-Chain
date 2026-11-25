@@ -57,3 +57,11 @@ def test_stub_stdout_only_protocol():
                           text=True, cwd=APP_DIR, timeout=30,
                           env={"PYTHONPATH": str(APP_DIR), "PATH": "/usr/bin"})
     assert proc.stdout == ""
+
+
+def test_reason_codes_enum_and_control_sku(mcp_backend):
+    data = mcp_backend.call("get_expiry_risks")
+    assert all(c in schemas.REASON_CODES for i in data["items"] for c in i["reason_codes"])
+    control = next(i for i in data["items"] if i["sku_id"] == "SKU-077")
+    assert control["risk_level"] == "LOW" and control["reason_codes"] == []
+    assert schemas.invalid_reason_codes(["YOK_KOD"]) != []

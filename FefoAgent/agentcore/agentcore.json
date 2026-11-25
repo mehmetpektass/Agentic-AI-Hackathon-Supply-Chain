@@ -28,6 +28,9 @@
           "name": "MCP_BACKEND",
           "value": "stub"
         }
+      ],
+      "additionalPolicies": [
+        "policies/s3-reports.json"
       ]
     }
   ],

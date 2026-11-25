@@ -6,6 +6,18 @@ Audience = ("WAREHOUSE", "COMMERCIAL", "SUPPLIER", "DEALER", "DONATION_PARTNER")
 ActionType = ("FEFO_PRIORITY", "DEALER_OFFER", "CAMPAIGN", "DONATION", "SUPPLIER_RETURN")
 
 
+REASON_CODES = ("FIFO_VIOLATION", "SLOW_MOVER_LARGE_LOT", "SHORT_SHELF_LIFE",
+                "DEALER_STOPPED_ORDERING", "STRICT_DEALER_ONLY", "DEMAND_DROP_TREND",
+                "INBOUND_FRESH_LOT", "UNSAVEABLE")
+
+
+def invalid_reason_codes(codes: Any) -> list[str]:
+    """Enum dışı veya liste olmayan reason_codes değerlerini döner (boş liste geçerlidir)."""
+    if not isinstance(codes, list):
+        return ["reason_codes liste değil"]
+    return [f"reason_codes: '{c}' geçersiz" for c in codes if c not in REASON_CODES]
+
+
 class Range(TypedDict):
     low: float
     expected: float
@@ -84,6 +96,7 @@ def validate_expiry_risks(data: Any) -> list[str]:
             continue
         for rng in ("forecast_units_in_window", "at_risk_units", "loss_try"):
             errs += _range_errors(item, rng, where)
+        errs += [f"{where}: {e}" for e in invalid_reason_codes(item["reason_codes"])]
         cur = item["loss_try"].get("expected", 0)
         if prev is not None and cur > prev:
             errs.append(f"{where}: loss_try.expected azalan sırada değil")
@@ -95,6 +108,7 @@ def validate_sku_profile(data: Any) -> list[str]:
     errs = _missing(data, SKU_PROFILE_FIELDS, "get_sku_profile")
     if errs:
         return errs
+    errs += invalid_reason_codes(data["signals"])
     errs += _missing(data["daily_velocity"], ("avg_7d", "avg_30d", "trend_pct"), "daily_velocity")
     errs += _missing(data["weekday_factors"],
                      ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"), "weekday_factors")

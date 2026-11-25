@@ -26,8 +26,8 @@
     },
     "risk_level": "HIGH",
     "reason_codes": [
-      "FIFO_BROKEN",
-      "DEMAND_DROP"
+      "FIFO_VIOLATION",
+      "DEMAND_DROP_TREND"
     ],
     "forecast_confidence": "HIGH",
     "wape": 0.18
@@ -59,7 +59,7 @@
     },
     "risk_level": "MEDIUM",
     "reason_codes": [
-      "SLOW_MOVER"
+      "SLOW_MOVER_LARGE_LOT"
     ],
     "forecast_confidence": "MEDIUM",
     "wape": 0.22
@@ -91,7 +91,7 @@
     },
     "risk_level": "MEDIUM",
     "reason_codes": [
-      "DEALER_INACTIVE"
+      "DEALER_STOPPED_ORDERING"
     ],
     "forecast_confidence": "LOW",
     "wape": 0.41
@@ -122,9 +122,7 @@
       "high": 600
     },
     "risk_level": "LOW",
-    "reason_codes": [
-      "NEAR_THRESHOLD"
-    ],
+    "reason_codes": [],
     "forecast_confidence": "HIGH",
     "wape": 0.12
   }

@@ -7,7 +7,9 @@ from model.load import load_model
 from parse import parse_payload
 from memory.session import get_memory_session_manager
 from mcp_adapter import build_mcp_client
-from prompts import SYSTEM_PROMPT
+from prompts import build_system_prompt
+from policy_tool import search_policies
+from role_hook import RoleHook
 
 
 
@@ -23,8 +25,9 @@ def _get_agent(session_id: str, actor_id: str) -> Agent:
         model=load_model(),
         session_manager=get_memory_session_manager(session_id, actor_id),
         conversation_manager=_make_conversation_manager(),
-        system_prompt=SYSTEM_PROMPT,
-        tools=[build_mcp_client()],
+        system_prompt=build_system_prompt(actor_id),
+        tools=[build_mcp_client(), search_policies],
+        hooks=[RoleHook(actor_id)],
     )
 
 def create_app():

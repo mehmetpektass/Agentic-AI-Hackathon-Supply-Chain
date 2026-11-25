@@ -45,8 +45,8 @@
       }
     ],
     "signals": [
-      "FIFO_BROKEN",
-      "DEMAND_DROP"
+      "FIFO_VIOLATION",
+      "DEMAND_DROP_TREND"
     ]
   },
   "SKU-031": {
@@ -95,7 +95,7 @@
       }
     ],
     "signals": [
-      "SLOW_MOVER"
+      "SLOW_MOVER_LARGE_LOT"
     ]
   },
   "SKU-058": {
@@ -144,7 +144,7 @@
       }
     ],
     "signals": [
-      "DEALER_INACTIVE"
+      "DEALER_STOPPED_ORDERING"
     ]
   },
   "SKU-077": {
@@ -192,8 +192,6 @@
         ]
       }
     ],
-    "signals": [
-      "NEAR_THRESHOLD"
-    ]
+    "signals": []
   }
 }

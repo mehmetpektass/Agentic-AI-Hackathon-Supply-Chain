@@ -191,7 +191,7 @@ Genel kurallar:
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Rol hook'u
-  - [ ] 7.1 `role_hook.py` dosyasını yaz
+  - [x] 7.1 `role_hook.py` dosyasını yaz
     - `BeforeToolCallEvent` üzerinde yalnızca `create_action_drafts` çağrısını denetle
     - Actor_Id biçimini doğrula (`<rol>-<isim>`, yalnızca harf, rakam, tire). Yalnızca `depo` ve `ticari` rolleri geçerlidir. Eksik, biçimsiz veya bilinmeyen rolde çağrıyı iptal et ve rolün belirlenemediğini bildir
     - Role_Action_Matrix: `FEFO_PRIORITY`, `DONATION`, `SUPPLIER_RETURN` ve `generate_report_file` her iki rol için izinli. `DEALER_OFFER` ve `CAMPAIGN` yalnızca `ticari` için ve Max_Discount_Pct_By_Role sınırı içinde izinli
@@ -200,13 +200,13 @@ Genel kurallar:
     - İptal sonrası konuşma sürer
     - _Requirements: 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 9.10, 9.11_
 
-  - [ ] 7.2 Max_Discount_Pct_By_Role yapılandırmasını `config.py` içine ekle
+  - [x] 7.2 Max_Discount_Pct_By_Role yapılandırmasını `config.py` içine ekle
     - `app/agent/data/params.json` içindeki `max_discount_pct_by_role` alanını oku. Dosya veya alan yoksa tek config noktasındaki (`config.py`) varsayılana düş: `ticari` → `DEALER_OFFER` 20, `CAMPAIGN` 25; `depo` → indirimli aksiyon yok. Bozuk JSON'da varsayılana düş ve uyarıyı stderr'e logla
     - `data/` klasörü Dev B export'una aittir, elle düzenlenmez ve dosya oluşturulmaz. `role_policy.json` kullanılmaz. Artık bekleyen girdi yoktur
     - _Requirements: 9.5, 9.9_
 
 
-  - [ ] 7.3 Role_Hook'u agent'a bağla
+  - [x] 7.3 Role_Hook'u agent'a bağla
     - `_get_agent` içinde hook'u kaydet
     - Her istekte `actorId` değerinden rolü belirle ve doğrula. `create_action_drafts` çağrısında `approver_actor_id` alanına doğrulanmış Actor_Id değerini yaz
     - _Requirements: 9.1, 9.3, 9.10, 9.12_
@@ -237,18 +237,18 @@ Genel kurallar:
     - **Validates: Requirements 9.2, 9.10**
 
 - [ ] 8. `search_policies` ve KB_Fallback
-  - [ ] 8.1 `policy_tool.py` içinde KB_Fallback aramasını yaz
-    - Paketlenmiş `policy.md` ve `process_guide.md` dosyalarını `app/agent/policy_docs/` altına koy. Dosyalar Dev B/L tarafından sağlanır. Repoda yoksa Kullanıcı'ya bildir ve paketlenen yola uydurma içerik yazma. Testler için küçük `POL-x` ve `PRC-x` içeren örnek dosyalar yalnızca test fixture'ı olarak tutulur
+  - [x] 8.1 `policy_tool.py` içinde KB_Fallback aramasını yaz
+    - Paketlenmiş `policy.md` ve `process_guide.md` dosyalarını `app/agent/data/policy/` altına koy. Dosyalar Dev B/L tarafından sağlanır. Repoda yoksa Kullanıcı'ya bildir ve paketlenen yola uydurma içerik yazma. Testler için küçük `POL-x` ve `PRC-x` içeren örnek dosyalar yalnızca test fixture'ı olarak tutulur
     - Arama sonucu `{"pasajlar": [{"madde_no", "metin"}], "kb_kullanılamadı": bool}` biçiminde döner ve her pasaj `POL-x` veya `PRC-x` numarası taşır
     - _Requirements: 7.14, 14.3, 14.4, 14.7_
 
-  - [ ] 8.2 Knowledge_Base sorgusunu ekle ve fallback'e geçişi bağla
+  - [x] 8.2 Knowledge_Base sorgusunu ekle ve fallback'e geçişi bağla
     - `KNOWLEDGE_BASE_ID` tanımlıysa Bedrock Knowledge Base'i sorgula. Tanımlı değilse veya erişim hatası olursa hatayı logla ve KB_Fallback'e geç
     - Fallback çıktısı ana yol ile aynı anahtar kümesini korur ve `kb_kullanılamadı` değerini `true` yapar
     - `search_policies` yerel `@tool` olarak kalır ve Fefo_MCP üzerinden sunulmaz. Docstring yeteneği açık anlatır
     - _Requirements: 7.14, 7.15, 7.16, 14.1, 14.2, 14.3, 14.4, 14.5_
 
-  - [ ] 8.3 `search_policies` tool'unu agent'a ekle
+  - [x] 8.3 `search_policies` tool'unu agent'a ekle
     - `_get_agent` içinde yerel tool olarak kaydet
     - _Requirements: 7.15, 10.1, 14.5_
 
@@ -265,7 +265,7 @@ Genel kurallar:
     - **Validates: Requirements 14.4**
 
 - [ ] 9. Sistem prompt ve karar akışı
-  - [ ] 9.1 Sistem prompt'unu `prompts.py` içinde tamamla
+  - [x] 9.1 Sistem prompt'unu `prompts.py` içinde tamamla
     - Tool'lar adlarıyla değil yetenekleriyle anlatılır
     - Kurallar: rakamlar yalnızca tool çıktısından alınır ve hiçbir hesap yapılmaz, ₺ Türkçe biçimde sunulur, `generate_report_file` için `summary_text` alanına yeni rakam eklenmez, Türkçe soruya Türkçe yanıt, mail veya mesaj asla gönderilmez ("maili gönder" reddedilir, yalnızca taslak), verilerin "temsili senaryo" olduğu belirtilir
     - Karar akışı: risk listesi, neden, simülasyon, öneri, onay, taslaklar. Kullanıcı açıkça onaylamadan taslak oluşturma çağrılmaz. `forecast_confidence` değeri `LOW` olan öğe için düşük güvenli tahmin uyarısı verilir
